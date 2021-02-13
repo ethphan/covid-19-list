@@ -14,9 +14,12 @@ import CountryListContext from "./CountryListContext";
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
-  tableCtn: {
+  countryListCtn: {
     width: 650,
     margin: "0 auto",
+    textAlign: "center",
+  },
+  tableCtn: {
     backgroundColor: "#f1f1f1",
   },
   tableLink: {
@@ -45,7 +48,7 @@ const CountryList = () => {
   const classes = useStyles();
 
   return (
-    <div>
+    <div className={classes.countryListCtn}>
       {countryList ? (
         <TableContainer className={classes.tableCtn} component={Paper}>
           <Table className={classes.table} aria-label="simple table">

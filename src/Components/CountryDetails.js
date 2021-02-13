@@ -10,6 +10,7 @@ const useStyles = makeStyles({
     backgroundColor: "#f1f1f1",
     borderRadius: "4px",
     padding: "10px 20px",
+    textAlign: "center",
   },
   countryTitle: {
     margin: "20px 10px 30px",
@@ -72,7 +73,7 @@ const CountryDetails = (props) => {
         <CircularProgress />
       )}
     </div>
-  )
+  );
 };
 
 export default CountryDetails;
